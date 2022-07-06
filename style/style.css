@@ -41,10 +41,39 @@ body {
 .section-tab .tab-item {
   flex-grow: 1;
   padding: 10px;
-  color: orange;
+  color: gray;
   text-decoration: none;
 }
 .section-tab .active {
   background-color: #eaeaea;
+  color: orange;
   border-bottom: 3px solid orange;
+}
+
+.section-category .category-item {
+  flex-grow: 1;
+  font-size: 0.8rem;
+  color: orange;
+  text-decoration: none;
+  border-right: 2px solid #dedede;
+}
+.section-category .category-item:nth-last-child(1) {
+  border: none;
+}
+
+.section-product .card {
+  max-width: 408px;
+  margin-top: 10px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-radius: 10px;
+}
+.section-product .card .product-name {
+  font-size: 1rem;
+}
+.section-product .card .product-price {
+  font-size: 0.8rem;
+}
+.section-product .card .product-condition {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
