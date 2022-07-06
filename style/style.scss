@@ -45,18 +45,15 @@ body {
 }
 
 .section-tab {
-  background-color: rgb(49, 49, 49);
-
-  .nav-link {
-    color: #000;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  .tab-item {
+    flex-grow: 1;
+    padding: 10px;
+    color: orange;
+    text-decoration: none;
   }
 
-  .nav-item {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #f7f7f7;
-    flex-grow: 1;
+  .active {
+    background-color: #eaeaea;
+    border-bottom: 3px solid orange;
   }
 }

@@ -38,17 +38,13 @@ body {
   font-size: 0.8rem;
 }
 
-.section-tab {
-  background-color: rgb(49, 49, 49);
-}
-.section-tab .nav-link {
-  color: #000;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.section-tab .nav-item {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #f7f7f7;
+.section-tab .tab-item {
   flex-grow: 1;
+  padding: 10px;
+  color: orange;
+  text-decoration: none;
+}
+.section-tab .active {
+  background-color: #eaeaea;
+  border-bottom: 3px solid orange;
 }/*# sourceMappingURL=style.css.map */
