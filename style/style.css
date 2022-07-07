@@ -31,48 +31,80 @@ body {
   z-index: 4;
 }
 .section-header .logo-text h4 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 .section-header .logo-text p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .section-tab .tab-item {
   flex-grow: 1;
   padding: 10px;
   color: gray;
+  background-color: #fff;
   text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 .section-tab .active {
   background-color: #eaeaea;
   color: orange;
   border-bottom: 3px solid orange;
 }
-
-.section-category .category-item {
+.section-tab .section-category {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+.section-tab .section-category .category-item {
   flex-grow: 1;
   font-size: 0.8rem;
   color: orange;
   text-decoration: none;
   border-right: 2px solid #dedede;
 }
-.section-category .category-item:nth-last-child(1) {
+.section-tab .section-category .category-item:nth-last-child(1) {
   border: none;
 }
 
 .section-product .card {
-  max-width: 408px;
   margin-top: 10px;
-  margin-right: 2px;
-  margin-left: 2px;
+  max-width: 180px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 10px;
+  position: relative;
+}
+.section-product .card .card-img-top {
+  max-width: 180px;
+  border-radius: 10px;
+  border-bottom: 4px solid orange;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.section-product .card .new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+}
+.section-product .card .sold {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  width: 40px;
+}
+.section-product .card .category {
+  font-size: 0.7rem;
 }
 .section-product .card .product-name {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .section-product .card .product-price {
   font-size: 0.8rem;
+  font-weight: 500;
 }
 .section-product .card .product-condition {
   font-size: 0.7rem;
