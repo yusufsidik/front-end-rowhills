@@ -59,9 +59,12 @@ body {
 .section-tab .section-category .category-item {
   flex-grow: 1;
   font-size: 0.8rem;
-  color: orange;
+  color: gray;
   text-decoration: none;
   border-right: 2px solid #dedede;
+}
+.section-tab .section-category .select {
+  color: orange;
 }
 .section-tab .section-category .category-item:nth-last-child(1) {
   border: none;
@@ -108,4 +111,28 @@ body {
 }
 .section-product .card .product-condition {
   font-size: 0.7rem;
+}
+.section-product .btn-load-more {
+  background-color: orange;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.section-list-category .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  border-left: none;
+  border-right: none;
+}
+.section-list-category .list-group-item p {
+  font-size: 0.7rem;
+  margin: 0;
+  color: gray;
+}
+.section-list-category img {
+  width: 10px;
+  height: 10px;
 }/*# sourceMappingURL=style.css.map */

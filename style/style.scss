@@ -68,9 +68,13 @@ body {
     .category-item {
       flex-grow: 1;
       font-size: .8rem;
-      color: orange;
+      color: gray;
       text-decoration: none;
       border-right: 2px solid #dedede;
+    }
+
+    .select {
+      color: orange;
     }
 
     .category-item:nth-last-child(1) {
@@ -111,6 +115,7 @@ body {
       width: 40px;
     }
 
+
     .category {
       font-size: .7rem;
     }
@@ -127,5 +132,34 @@ body {
     .product-condition {
       font-size: .7rem;
     }
+  }
+
+  .btn-load-more {
+    background-color: orange;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
+.section-list-category {
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+    border-left: none;
+    border-right: none;
+
+    p {
+      font-size: .7rem;
+      margin: 0;
+      color: gray;
+    }
+  }
+
+  img {
+    width: 10px;
+    height: 10px;
   }
 }
