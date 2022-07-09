@@ -163,3 +163,54 @@ body {
     height: 10px;
   }
 }
+
+.section-product-detail {
+  .swiper {
+    max-width: 768px;
+    border-bottom: 3px solid orange;
+
+    .swiper-slide {
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+    }
+  }
+
+  .price {
+    position: relative;
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .badge-status {
+      position: absolute;
+      top: 0;
+      right: 10px;
+    }
+  }
+
+  .table {
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  .btn-back {
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .content-buy-now {
+    .buy-now {
+      font-size: .8rem;
+      margin-left: 5px;
+    }
+  }
+}

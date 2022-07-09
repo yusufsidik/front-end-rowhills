@@ -14,6 +14,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
   </style>
 
+  <!-- library swiper js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
   <!-- my css -->
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -33,7 +36,7 @@
     </div>
   </section>
 
-  <section class="section-tab sticky-top">
+  <section class="section-tab sticky-top d-none">
     <div class="tab-list d-flex list-unstyled text-center">
       <a href="" class="tab-item">Produk</a>
       <a href="" class="tab-item">Desc</a>
@@ -48,6 +51,7 @@
     </div>
   </section>
 
+  <!-- page product -->
   <section class="section-product pt-1 d-none">
     <div class="mx-1">
       <div class="content-product d-flex flex-wrap">
@@ -154,7 +158,8 @@
     </div>
   </section>
 
-  <section class="section-list-category">
+  <!-- page category -->
+  <section class="section-list-category d-none">
     <div class="container mx-auto" style="max-width: 700px;">
       <ul class="list-group">
         <a href="" class="text-decoration-none link-product-category">
@@ -189,11 +194,103 @@
       </ul>
     </div>
   </section>
+
+  <!-- page detail product -->
+  <section class="section-product-detail pb-4">
+    <div class="position-relative">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/img/product-1.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/product-2.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/product-3.jpeg" alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="detail-product px-3 pt-3">
+        <div class="mt-1 mb-4 price">
+          <h2>Rp. 120.000</h2>
+          <h3>Crewneck Abu Abu</h3>
+          <span class="badge bg-success badge-status">Tersedia</span>
+        </div>
+        <hr>
+        <small>Rincian Produk
+          <img src="assets/img/information.png" alt="" width="15px">
+        </small>
+        <table class="table table-borderless mt-3">
+          <tbody>
+            <tr>
+              <td>Kondisi</td>
+              <td>&nbsp;</td>
+              <td>90/100</td>
+            </tr>
+            <tr>
+              <td>Warna</td>
+              <td>&nbsp;</td>
+              <td>Abu-abu</td>
+            </tr>
+            <tr>
+              <td>Type Gender</td>
+              <td>&nbsp;</td>
+              <td>Unisex</td>
+            </tr>
+            <tr>
+              <td>Ukuran</td>
+              <td>&nbsp;</td>
+              <td>XL</td>
+            </tr>
+            <tr>
+              <td>Keterangan</td>
+              <td>&nbsp;</td>
+              <td>Minus Liur Sepulau</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="btn btn-back position-absolute top-0 start-0 mt-2">
+        <img src="assets/img/left.png" alt="" width="30px">
+      </button>
+    </div>
+    <div class="content-buy-now p-3 d-flex flex-row justify-content-between align-items-center">
+      <span>Pesan Sekarang :</span>
+      <div class="order-button">
+        <a class="btn buy-now bg-dark text-white text-decoration-none d-inline">
+          <img src="assets/img/instagram.png" alt="" width="20px" class="me-1">
+          Instagram
+        </a>
+        <a class="btn buy-now bg-dark text-white text-decoration-none d-inline">
+          <img src="assets/img/whatsapp-green.png" alt="" width="20px" class="me-1">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
 </body>
 <!-- bootstrap & popperjs -->
 <script src="assets/js/popper.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 
+<!-- library swiper js -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: false,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
 <!-- myscript -->
 <!-- <script src="assets/js/script.js"></script> -->
 

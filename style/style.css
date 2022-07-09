@@ -135,4 +135,42 @@ body {
 .section-list-category img {
   width: 10px;
   height: 10px;
+}
+
+.section-product-detail .swiper {
+  max-width: 768px;
+  border-bottom: 3px solid orange;
+}
+.section-product-detail .swiper .swiper-slide {
+  text-align: center;
+}
+.section-product-detail .swiper img {
+  width: 250px;
+}
+.section-product-detail .price {
+  position: relative;
+}
+.section-product-detail .price h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.section-product-detail .price h3 {
+  font-size: 1rem;
+}
+.section-product-detail .price .badge-status {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.section-product-detail .table {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.section-product-detail .btn-back {
+  cursor: pointer;
+  z-index: 3;
+}
+.section-product-detail .content-buy-now .buy-now {
+  font-size: 0.8rem;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
