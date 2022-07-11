@@ -170,6 +170,9 @@ body {
   cursor: pointer;
   z-index: 3;
 }
+.section-product-detail .content-buy-now .pesan-sekarang {
+  font-size: 0.9rem;
+}
 .section-product-detail .content-buy-now .buy-now {
   font-size: 0.8rem;
   margin-left: 5px;

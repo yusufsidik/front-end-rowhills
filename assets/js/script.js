@@ -10,7 +10,8 @@ const fetchData = async function () {
     })
     .then(response => {
       categories.push(response.data.data)
-      console.log(categories[0])
+      categories = categories[0]
+      console.log(categories)
     })
 }
 
@@ -24,7 +25,13 @@ const fetchLoad = async (page) => {
   }).then(response => {
     return response.json()
   }).then(data => {
-    categories = [...categories[0], ...data.data.data]
+    // const x = data.data.data;
+    // for (let index = 0; index < x.length; index++) {
+    //   categories.push(x[index])
+    // }
+    // console.log(categories)
+
+    categories = [...categories, ...data.data.data]
     console.log(categories)
   })
 }

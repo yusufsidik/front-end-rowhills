@@ -39,20 +39,20 @@
   <section class="section-tab sticky-top d-none">
     <div class="tab-list d-flex list-unstyled text-center">
       <a href="" class="tab-item">Produk</a>
-      <a href="" class="tab-item">Desc</a>
+      <a href="" class="tab-item">Deskripsi</a>
       <a href="" class="tab-item active">Kategori</a>
     </div>
     <div class="section-category container pt-3">
       <div class="category-list d-flex list-unstyled text-center">
         <a href="" class="category-item select">Terbaru</a>
-        <a href="" class="category-item">Under Price</a>
-        <a href="" class="category-item">Higher Price</a>
+        <a href="" class="category-item">Harga Terendah</a>
+        <a href="" class="category-item">Harga Tertinggi</a>
       </div>
     </div>
   </section>
 
   <!-- page product -->
-  <section class="section-product pt-1 d-none">
+  <section class="section-product pt-1">
     <div class="mx-1">
       <div class="content-product d-flex flex-wrap">
         <div class="card">
@@ -154,7 +154,7 @@
       </div>
     </div>
     <div class="load-more my-5 text-center">
-      <button class="btn btn-load-more px-3 py-2">Load More</button>
+      <button class="btn btn-load-more px-3 py-2" onclick="fetchLoad(2)">Load More</button>
     </div>
   </section>
 
@@ -196,7 +196,7 @@
   </section>
 
   <!-- page detail product -->
-  <section class="section-product-detail pb-4">
+  <section class="section-product-detail pb-4 d-none">
     <div class="position-relative">
       <div class="swiper">
         <!-- Additional required wrapper -->
@@ -227,6 +227,11 @@
         </small>
         <table class="table table-borderless mt-3">
           <tbody>
+            <tr>
+              <td>Kategori</td>
+              <td>&nbsp;</td>
+              <td>Crewneck</td>
+            </tr>
             <tr>
               <td>Kondisi</td>
               <td>&nbsp;</td>
@@ -259,14 +264,14 @@
         <img src="assets/img/left.png" alt="" width="30px">
       </button>
     </div>
-    <div class="content-buy-now p-3 d-flex flex-row justify-content-between align-items-center">
-      <span>Pesan Sekarang :</span>
+    <div class="content-buy-now p-3 d-flex flex-column justify-content-between align-items-center">
+      <span class="pesan-sekarang pb-2">Pesan Sekarang :</span>
       <div class="order-button">
-        <a class="btn buy-now bg-dark text-white text-decoration-none d-inline">
+        <a class="btn btn-sm buy-now bg-dark text-white text-decoration-none d-inline">
           <img src="assets/img/instagram.png" alt="" width="20px" class="me-1">
           Instagram
         </a>
-        <a class="btn buy-now bg-dark text-white text-decoration-none d-inline">
+        <a class="btn btn-sm buy-now bg-dark text-white text-decoration-none d-inline">
           <img src="assets/img/whatsapp-green.png" alt="" width="20px" class="me-1">
           WhatsApp
         </a>
@@ -292,6 +297,6 @@
   });
 </script>
 <!-- myscript -->
-<!-- <script src="assets/js/script.js"></script> -->
+<script src="assets/js/script.js"></script>
 
 </html>
