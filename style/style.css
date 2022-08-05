@@ -48,7 +48,7 @@ body {
   font-weight: 500;
 }
 .section-tab .active {
-  background-color: #eaeaea;
+  background-color: #fff;
   color: orange;
   border-bottom: 3px solid orange;
 }
@@ -112,6 +112,9 @@ body {
 .section-product .card .product-condition {
   font-size: 0.7rem;
 }
+.section-product .card .bintang {
+  width: 15px;
+}
 .section-product .btn-load-more {
   background-color: orange;
   color: #fff;
@@ -141,11 +144,21 @@ body {
   max-width: 768px;
   border-bottom: 3px solid orange;
 }
-.section-product-detail .swiper .swiper-slide {
+.section-product-detail .swiper .swiper-wrapper {
+  align-items: center;
+}
+.section-product-detail .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
 }
 .section-product-detail .swiper img {
-  width: 250px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.section-product-detail .img-info {
+  width: 12px;
 }
 .section-product-detail .price {
   position: relative;

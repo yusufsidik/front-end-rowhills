@@ -56,7 +56,7 @@ body {
   }
 
   .active {
-    background-color: #eaeaea;
+    background-color: #fff;
     color: orange;
     border-bottom: 3px solid orange;
   }
@@ -132,6 +132,10 @@ body {
     .product-condition {
       font-size: .7rem;
     }
+
+    .bintang {
+      width: 15px;
+    }
   }
 
   .btn-load-more {
@@ -169,13 +173,24 @@ body {
     max-width: 768px;
     border-bottom: 3px solid orange;
 
-    .swiper-slide {
-      text-align: center;
+    .swiper-wrapper {
+      align-items: center;
+
+      .swiper-slide {
+        text-align: center;
+      }
     }
 
     img {
-      width: 250px;
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+      object-fit: fill;
     }
+  }
+
+  .img-info {
+    width: 12px;
   }
 
   .price {
